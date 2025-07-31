@@ -77,8 +77,8 @@ layers:
   - F8
   - F9
   - F10
-  - F12
   - F11
+  - F12
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
