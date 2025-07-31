@@ -93,18 +93,18 @@ layers:
   - F23
   - F24
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - ^
-  - '&'
-  - '*'
+  - '&mt_pinky PLUS EQUAL'
+  - {t: '[', s: '{'}
+  - '{'
   - (
+  - '~'
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - {t: '`', s: '~'}
   - )
-  - {t: '-', s: _}
+  - '}'
+  - {t: ']', s: '}'}
+  - '&mt_pinky UNDERSCORE MINUS'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
