@@ -66,7 +66,60 @@
         quick-tap-ms = <130>;
     };
 
-    behaviors {
+     behaviors {
+        td0: td0 {
+            compatible = "zmk,behavior-tap-dance";
+            display-name = "Shift/Caps Lock Tap Dance";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+        };
+
+        mouse_click: mouse_click {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOUSE_CLICK";
+            #binding-cells = <2>;
+            tapping-term-ms = <500>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <20>;
+            hold-trigger-on-release;
+            bindings = <&mkp>, <&mkp>;
+        };
+
+        mod_kp: mod_kp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOD_KP";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <130>;
+            flavor = "hold-preferred";
+            quick-tap-ms = <130>;
+            hold-trigger-key-positions = <42 44 45 47 43 46>;
+        };
+
+        to_kp: to_kp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TO_KP";
+            bindings = <&to>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <500>;
+            flavor = "tap-preferred";
+        };
+
+        mt_pinky: mt_pinky {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_PINKY";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <180>;
+            require-prior-idle-ms = <150>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <14 26>;
+            hold-trigger-on-release;
+        };
     };
 
     keymap {
@@ -101,13 +154,13 @@
         layer_2 {
             bindings = <
 &kp F1      &kp F2     &kp F3    &kp F4    &kp F5    &kp F6       &mmv MOVE_UP          &kp F7     &kp F8    &kp F9    &kp F10   &kp F11    &kp F12
-&kp F13     &kp F14    &kp F15   &kp F16   &kp F17   &kp F18      &mmv MOVE_DOWN        &kp F19    &kp F20   &kp F21   &kp F22   &kp F23    &kp F24
-&kp PLUS    &kp EQUAL  &kp LBKT  &kp LBRC  &kp LPAR  &kp TILDE    &mmv MOVE_LEFT        &kp GRAVE  &kp RPAR  &kp RBRC  &kp RBKT  &kp MINUS  &kp UNDERSCORE
-&trans      &none      &none     &none     &none     &none        &mmv MOVE_RIGHT       &none      &none     &none     &none     &none      &trans
+&kp LS(TILDE)  &kp LS(EXCL)       &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)   &kp LS(PRCNT)      &mmv MOVE_DOWN        &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)  &kp PIPE      &kp BSLH           &none
+&kp GRAVE      &mt_pinky LGUI N1  &mt LCTRL N2  &mt LALT N3    &mt LSHIFT N4  &kp N5    &mmv MOVE_LEFT        &kp N6         &mt RSHIFT N7  &mt RALT N8   &mt RCTRL N9  &mt_pinky RGUI N0  &none
+&none          &none              &kp LBKT      &kp LBRC       &kp LPAR       &none        &mmv MOVE_RIGHT       &none          &kp RPAR       &kp RBRC      &kp RBKT      &none              &none
 &kp C_MUTE  &trans     &trans    &trans    &trans    &trans       &mouse_click MB2 MB1  &trans     &trans    &trans    &trans    &trans
             >;
 
-            display-name = "layer1";
+            display-name = "SYMNUM";
             sensor-bindings = <&scroll_encoder>;
         };
 
