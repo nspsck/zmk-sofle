@@ -44,28 +44,6 @@
         tap-ms = <100>;
     };
 
-    mouse_click: mouse_click {
-        compatible = "zmk,behavior-hold-tap";
-        label = "MOUSE_CLICK";
-        bindings = <&mkp>, <&mkp>;
-
-        #binding-cells = <2>;
-        tapping-term-ms = <500>;
-        flavor = "balanced";
-        hold-trigger-key-positions = <58>;
-        hold-trigger-on-release;
-    };
-
-    mod_kp: mod_kp {
-        compatible = "zmk,behavior-hold-tap";
-        label = "MOD_KP";
-        bindings = <&mo>, <&kp>;
-
-        #binding-cells = <2>;
-        tapping-term-ms = <130>;
-        quick-tap-ms = <130>;
-    };
-
      behaviors {
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
