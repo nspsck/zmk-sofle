@@ -44,7 +44,7 @@
         tap-ms = <100>;
     };
 
-     behaviors {
+    behaviors {
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Caps Lock Tap Dance";
@@ -105,7 +105,7 @@
 
         layer_0 {
             bindings = <
-&kp GRAVE   &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW      &kp N6     &kp N7  &kp N8     &kp N9         &kp N0    &kp BACKSLASH
+&kp EQUAL   &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW      &kp N6     &kp N7  &kp N8     &kp N9         &kp N0    &kp MINUS
 &kp ESC     &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW    &kp Y      &kp U   &kp I      &kp O          &kp P     &kp BACKSPACE
 &kp TAB     &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW    &kp H      &kp J   &kp K      &kp L          &kp SEMI  &kp APOS
 &kp LSHFT   &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW   &kp N      &kp M   &kp COMMA  &kp DOT        &kp FSLH  &kp RSHIFT
@@ -118,9 +118,9 @@
 
         layer_1 {
             bindings = <
-&kp ESC     &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW      &kp N6     &kp N7  &kp N8     &kp N9         &kp N0    &kp BACKSPACE
-&kp TAB     &kp Q      &kp W         &kp F         &kp P   &kp B        &kp DOWN_ARROW    &kp J      &kp L   &kp U      &kp Y          &kp SEMI  &kp BSLH
-&kp CAPS    &kp A      &kp R         &kp S         &kp T   &kp G        &kp LEFT_ARROW    &kp M      &kp N   &kp E      &kp I          &kp O     &kp APOS
+&kp EQUAL   &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW      &kp N6     &kp N7  &kp N8     &kp N9         &kp N0    &kp MINUS
+&kp ESC     &kp Q      &kp W         &kp F         &kp P   &kp B        &kp DOWN_ARROW    &kp J      &kp L   &kp U      &kp Y          &kp SEMI  &kp BACKSPACE
+&kp TAB     &kp A      &kp R         &kp S         &kp T   &kp G        &kp LEFT_ARROW    &kp M      &kp N   &kp E      &kp I          &kp O     &kp APOS
 &kp LSHFT   &kp Z      &kp X         &kp C         &kp D   &kp V        &kp RIGHT_ARROW   &kp K      &kp H   &kp COMMA  &kp DOT        &kp FSLH  &kp RSHIFT
 &kp C_MUTE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &mo 2   &kp SPACE    &kp C_PLAY_PAUSE  &kp ENTER  &mo 3   &kp RALT   &mod_kp 5 DEL  &to 0
             >;
@@ -131,11 +131,11 @@
 
         layer_2 {
             bindings = <
-&kp F1      &kp F2     &kp F3    &kp F4    &kp F5    &kp F6       &mmv MOVE_UP          &kp F7     &kp F8    &kp F9    &kp F10   &kp F11    &kp F12
-&kp LS(TILDE)  &kp LS(EXCL)       &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)   &kp LS(PRCNT)      &mmv MOVE_DOWN        &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)  &kp PIPE      &kp BSLH           &none
-&kp GRAVE      &mt_pinky LGUI N1  &mt LCTRL N2  &mt LALT N3    &mt LSHIFT N4  &kp N5    &mmv MOVE_LEFT        &kp N6         &mt RSHIFT N7  &mt RALT N8   &mt RCTRL N9  &mt_pinky RGUI N0  &none
-&none          &none              &kp LBKT      &kp LBRC       &kp LPAR       &none        &mmv MOVE_RIGHT       &none          &kp RPAR       &kp RBRC      &kp RBKT      &none              &none
-&kp C_MUTE  &trans     &trans    &trans    &trans    &trans       &mouse_click MB2 MB1  &trans     &trans    &trans    &trans    &trans
+&kp F1         &kp F2             &kp F3        &kp F4         &kp F5         &kp F6           &mmv MOVE_UP          &kp F7         &kp F8         &kp F9        &kp F10       &kp F11            &kp F12
+&kp LS(TILDE)  &kp LS(EXCL)       &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)   &kp LS(PRCNT)    &mmv MOVE_DOWN        &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)  &kp PIPE      &kp BSLH           &none
+&kp GRAVE      &mt_pinky LGUI N1  &mt LCTRL N2  &mt LALT N3    &mt LSHIFT N4  &kp N5           &mmv MOVE_LEFT        &kp N6         &mt RSHIFT N7  &mt RALT N8   &mt RCTRL N9  &mt_pinky RGUI N0  &none
+&none          &none              &kp LBKT      &kp LBRC       &kp LPAR       &none            &mmv MOVE_RIGHT       &none          &kp RPAR       &kp RBRC      &kp RBKT      &none              &none
+&kp C_MUTE     &trans             &trans        &trans         &trans         &trans           &mouse_click MB2 MB1  &trans         &trans         &trans        &trans        &trans
             >;
 
             display-name = "SYMNUM";
@@ -152,6 +152,7 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+            label = "ARROWNUM";
         };
 
         layer_4 {
@@ -162,6 +163,8 @@
 &trans       &msc SCRL_LEFT   &mkp MB4        &mkp MCLK       &mkp MB5         &msc SCRL_DOWN     &none   &mkp MB2   &none           &none     &none      &none     &trans
 &trans       &trans           &trans          &trans          &trans           &trans             &trans  &trans     &trans          &trans    &trans
             >;
+
+            label = "MOUSE";
         };
 
         layer_5 {
@@ -172,15 +175,17 @@
 &none                             &none                              &none                              &none                              &none                             &none                              &none  &none                             &none                             &none                              &none                              &none                              &none
 &none                             &none                              &none                              &none                              &trans                            &none                              &none  &none                             &trans                            &none                              &none                              &none
             >;
+
+            label = "KBDCONF";
         };
     };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        layer3 {
-            if-layers = <1 2>;
-            then-layer = <3>;
+        MOUSE {
+            if-layers = <2 3>;
+            then-layer = <4>;
         };
     };
 };
