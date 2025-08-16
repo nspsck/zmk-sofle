@@ -170,8 +170,8 @@ layers:
   - {t: '9', h: '$$mdi:apple-keyboard-control$$', s: (}
   - {t: '0', h: RGUI, s: )}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-caps$$
+  - $$mdi:backspace-reverse-outline$$
   - {t: '[', s: '{'}
   - '{'
   - (
