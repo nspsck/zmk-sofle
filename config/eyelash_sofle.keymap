@@ -134,7 +134,7 @@
 &kp F1         &kp F2             &kp F3        &kp F4         &kp F5         &kp F6           &mmv MOVE_UP          &kp F7         &kp F8         &kp F9        &kp F10       &kp F11            &kp F12
 &kp LS(TILDE)  &kp LS(EXCL)       &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)   &kp LS(PRCNT)    &mmv MOVE_DOWN        &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)  &kp PIPE      &kp BSLH           &trans
 &kp GRAVE      &mt_pinky LGUI N1  &mt LCTRL N2  &mt LALT N3    &mt LSHIFT N4  &kp N5           &mmv MOVE_LEFT        &kp N6         &mt RSHIFT N7  &mt RALT N8   &mt RCTRL N9  &mt_pinky RGUI N0  &none
-&trans         &none              &kp LBKT      &kp LBRC       &kp LPAR       &none            &mmv MOVE_RIGHT       &none          &kp RPAR       &kp RBRC      &kp RBKT      &none              &trans
+&kp CAPS       &kp DELETE         &kp LBKT      &kp LBRC       &kp LPAR       &none            &mmv MOVE_RIGHT       &none          &kp RPAR       &kp RBRC      &kp RBKT      &none              &trans
 &kp C_MUTE     &trans             &trans        &trans         &trans         &trans           &mouse_click MB2 MB1  &trans         &trans         &trans        &trans        &trans
             >;
 
