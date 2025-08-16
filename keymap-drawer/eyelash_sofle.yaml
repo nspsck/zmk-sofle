@@ -158,17 +158,17 @@ layers:
   - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '`', s: '~'}
-  - {t: '1', h: LGUI, s: '!'}
-  - {t: '2', h: '$$mdi:apple-keyboard-control$$', s: '@'}
-  - {t: '3', h: '$$mdi:apple-keyboard-option$$', s: '#'}
-  - {t: '4', h: '$$mdi:apple-keyboard-shift$$', s: $}
+  - p 1
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '6', s: ^}
-  - {t: '7', h: '$$mdi:apple-keyboard-shift$$', s: '&'}
-  - {t: '8', h: '$$mdi:apple-keyboard-option$$', s: '*'}
-  - {t: '9', h: '$$mdi:apple-keyboard-control$$', s: (}
-  - {t: '0', h: RGUI, s: )}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-caps$$
   - $$mdi:backspace-reverse-outline$$
